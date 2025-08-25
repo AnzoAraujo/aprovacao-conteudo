@@ -1,0 +1,39 @@
+/* Limpa os estilos padrão do navegador */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #212121;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal da aplicação */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Limita a largura do carrossel para que não fique gigante em telas grandes */
+main {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Garante que a borda arredondada seja aplicada */
+}
+
+/* Personalização opcional da legenda do carrossel */
+.carousel .legend {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 16px;
+}

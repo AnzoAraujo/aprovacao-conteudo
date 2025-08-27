@@ -3,19 +3,8 @@ import React from "react";
 // Um componente simples para exibir o título
 const Header = ({ title }) => {
   return (
-    <header
-      style={{
-        textAlign: "center",
-        margin: "1rem 0",
-        background: "#212121",
-    
-      }}
-    >
-      <h1
-        style={{ fontSize: "2rem", fontWeight: 700, margin: 0, color: "#fff" }}
-      >
-        {title}
-      </h1>
+    <header className="text-center my-4 bg-neutral-900">
+      <h1 className="text-3xl font-bold m-0 text-white">{title}</h1>
     </header>
   );
 };

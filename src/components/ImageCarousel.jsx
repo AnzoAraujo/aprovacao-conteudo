@@ -5,25 +5,20 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 // Importa as imagens da pasta assets
-import image1 from '../assets/Mounjaro_01.jpg';
-import image2 from '../assets/Mounjaro_02.jpg';
-import image3 from '../assets/Mounjaro_03.jpg';
-import image4 from '../assets/Mounjaro_04.jpg';
-import image5 from '../assets/Mounjaro_05.jpg';
+import image1 from '../assets/image_01.jpg';
+import image2 from '../assets/image_02.jpg';
+import image3 from '../assets/image_03.jpg';
+import image4 from '../assets/image_04.jpg';
+import image5 from '../assets/image_05.jpg';
 
 
 const imagens = [image1, image2, image3, image4, image5];
 
 const ImageCarousel = () => {
   return (
-    // Configurações do Carrossel:
-    // autoPlay: Inicia a transição automática.
-    // infiniteLoop: Ao chegar na última imagem, volta para a primeira.
-    // showThumbs={false}: Esconde as miniaturas de navegação.
-    // showStatus={false}: Esconde o status (ex: "1 de 3").
     <Carousel
       showThumbs={true}
-      showStatus={true}
+      showStatus={false}
       thumbWidth={40}
       interval={3000} // Tempo de transição em milissegundos
     >
